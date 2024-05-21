@@ -2,13 +2,12 @@ package repos
 
 import (
 	"context"
-	"fmt"
-	"github.com/GCapeJasmine/ronin-follower/utils"
 	"sync"
 
 	"github.com/GCapeJasmine/ronin-follower/config"
 	"github.com/GCapeJasmine/ronin-follower/internal/domains/models"
 	"github.com/GCapeJasmine/ronin-follower/internal/domains/repos"
+	"github.com/GCapeJasmine/ronin-follower/utils"
 )
 
 type blockRepo struct {
@@ -74,7 +73,6 @@ func (b *blockRepo) InsertBlock(ctx context.Context, block *models.Block) error 
 		}
 		b.listBlock.RemoveHead()
 	}
-	fmt.Println(b.listBlock.List)
 	return nil
 }
 
