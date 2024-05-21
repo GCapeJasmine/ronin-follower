@@ -34,16 +34,31 @@ I used a doubly linked list to store blocks. It is convenient for implementing a
 
 ![Diagram](docs/image/getTransactionByHash.drawio.png)
 
+```bash
+curl --location 'localhost:8090/v1/transactions?hash=0x500e83afa0f4e85ff031a0e245cae12ca212b27720d63f5201ea7cb45d65e0ef'
+```
+
 ## API List transactions by block number
 
 ![Diagram](docs/image/getTransactionsByBlockNumber.drawio.png)
+
+```bash
+curl --location 'localhost:8090/v1/blocks/transactions?block_number=0x2132959'
+```
 
 ## API list transaction in range
 
 ![Diagram](docs/image/getTransactionsInRange.drawio.png)
 
+```bash
+curl --location 'localhost:8090/v1/transactions/list?from=0&to=9'
+```
+
 ## API get percentage of transactions which have gas fee lees than
 
 ![Diagram](docs/image/getPercentageOfTransactionGasFee.drawio.png)
 
+```bash
+curl --location 'localhost:8090/v1/transactions/gas?gas_fee=10'
+```
 
