@@ -26,21 +26,24 @@ Data structure
 I used a doubly linked list to store blocks. It is convenient for implementing an eviction strategy.
 ```
 
-Worker synchronizes with Ronin
+## Worker synchronizes with Ronin
 
 ![Diagram](docs/image/worker.drawio.png)
 
-API Transaction by hash
+## API Transaction by hash
 
 ![Diagram](docs/image/getTransactionByHash.drawio.png)
 
-API List transactions by block number
+## API List transactions by block number
+
 ![Diagram](docs/image/getTransactionsByBlockNumber.drawio.png)
 
-API list transaction in range
+## API list transaction in range
+
 ![Diagram](docs/image/getTransactionsInRange.drawio.png)
 
-API get percentage of transactions which have gas fee lees than
+## API get percentage of transactions which have gas fee lees than
+
 ![Diagram](docs/image/getPercentageOfTransactionGasFee.drawio.png)
 
 
